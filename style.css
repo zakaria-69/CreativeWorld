@@ -77,6 +77,10 @@ header{
     background-position: center 18%;
     
 }
+
+header a{
+    color: #551A8F;
+}
 .imgContainer{
     border: solid blue 2px;
     min-height: 30vh;
