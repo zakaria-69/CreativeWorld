@@ -1,0 +1,495 @@
+/*parametrage globaux*/
+
+/*color principal :  rgb(29, 255, 236);
+  color secondaire : rgb(233, 26, 233);
+*/
+
+*,::before,::after{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Lucida Sans Unicode', sans-serif; ;
+}
+
+h2{
+    min-height: 8vh;
+    font-size: x-large;
+    color: rgb(29, 255, 236);
+    font-style: italic;
+    text-transform: uppercase;
+    border: solid red 2px;
+    -webkit-text-stroke: .02rem;
+    -webkit-text-stroke-color: rgb(233, 26, 233);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.button{
+    border: double rgb(233, 26, 233) 3px;
+    padding: 5px;
+    border-radius: 25px;     
+}
+
+.button:hover{
+    background-color: rgb(233, 26, 233);
+    color: rgb(29, 255, 236);
+    padding: 5px;
+    border-radius: 25px;     
+}
+
+/*h1 exept header h1*/
+.mangaAnimeContainerSubContainer h1,#arts h1,#jeux-videos h1{
+    text-align: center;
+    border: solid green 2px;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(29, 255, 236);
+    font-style: italic;
+    text-transform: uppercase;
+    -webkit-text-stroke: .02rem;
+    -webkit-text-stroke-color: rgb(233, 26, 233);
+    
+}
+
+/*Header*/
+
+header{
+    border: solid red 2px;
+    background-image: url("./assets/img/shinobuChan.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center 18%;
+    
+}
+.imgContainer{
+    border: solid blue 2px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.imgContainer img{
+   width: 8rem;
+}
+
+.imgContainer ul{
+    margin: 1rem 2rem 1rem auto;
+    display: flex;
+}
+
+.imgContainer li{
+    border: double rgb(233, 26, 233) 3px;
+    margin: 5px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.imgContainer li:hover{
+    background-color: rgb(29, 255, 236);
+    color :rgb(233, 26, 233);
+    border-radius: 25px;
+}
+
+/*menu deroulant*/
+
+
+.menuDeroulant{
+    border: double rgb(29, 255, 236) 2px;
+  
+}
+
+.menuDeroulant li{
+    /*display: inline-block;
+    vertical-align: top;*/
+    width: 200px;
+    /*position: relative;*/
+    border: double rgb(233, 26, 233) 3px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.menuDeroulant li a{
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    color: rgb(29, 255, 236);
+    font-weight: 900;   
+   
+
+}
+
+.deroulant{
+    font-size: 1.3rem;
+     -webkit-text-stroke: .002rem;
+    -webkit-text-stroke-color: rgb(233, 26, 233);
+}
+
+.menuDeroulant li a:hover{
+    background-color: rgb(29, 255, 236);
+    color: rgb(233, 26, 233);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/*menu deroulant sub menu*/
+
+.menuDeroulant li:hover .sub-menu{
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+
+}
+
+.sub-menu li{
+    display: block;
+
+}
+
+.sub-menu li a{
+    background-color: rgb(0, 8, 8);
+    color:  rgb(29, 255, 236);
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.sub-menu li:hover a{
+background-color:rgb(29, 255, 236);
+color: rgb(233, 26, 233);
+font-size: 1.2rem;
+}
+
+.sub-menu li a:hover{
+    background-color: rgb(29, 255, 236);
+    
+}
+
+.menuDeroulant li:hover a{
+    display: block;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   margin: 0 auto;
+   min-height: 20vh;
+   
+
+}
+
+/*header title*/
+header h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    font-size: xxx-large;
+    color: rgb(29, 255, 236);
+    font-style: italic;
+    text-transform: uppercase;
+    -webkit-text-stroke: .02rem;
+    -webkit-text-stroke-color: rgb(233, 26, 233);
+   animation:rotateAndGrowMainTitle 3s linear ;  
+}
+
+
+@keyframes rotateAndGrowMainTitle {
+    0%{
+        transform: rotate(0deg) scale(0.2);   
+    }
+    25%{
+        transform: rotate(90deg) scale(0.4);
+           
+    }
+    50%{
+        transform: rotate(180deg) scale(0.6);   
+    }
+    75%{
+        transform: rotate(260deg) scale(0.8);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+            
+    }   
+}
+
+/*Slideshow manga Anime*/
+
+.mangaAnimeContainer{
+    border: solid blue 2px;
+    min-height: 100vh;
+    background: rgb(29,255,236);
+background: linear-gradient(90deg, rgba(29,255,236,1) 0%, rgba(233,26,233,1) 100%);
+}
+.mangaAnimeContainerSubContainer{
+    width: 100%;
+}
+.mangaAnimeContainerSubContainer{
+    border: solid red 2px;
+    
+}
+
+
+/*carousel*/
+
+.carousel{
+    min-height: 90vh;
+    display: flex;
+    align-items: center; 
+}
+
+.carousel ul{
+    padding: 0;
+   /* padding: 8rem 0;*/
+   display: flex;
+   /* overflow-x: scroll;*/
+   /* padding: 1rem 0;*/
+   padding-bottom: 1rem;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+   /* padding: 1rem 0;*/
+    /*scroll-snap-type: x mandatory;*/
+    /*align-items: center;*/
+    /*min-height: 90vh;*/
+    border: solid purple 3px;
+}
+
+.carousel-item {
+  /*  flex: 1 0 250px;*/
+    margin-left: 1rem;
+   /* scroll-snap-align: start;*/
+    border: solid blue 3px;
+   /* height: 80%;*/
+   padding: 0;
+}
+
+/*Carousel cards*/
+
+.card{
+    border: solid yellow 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content{
+    margin: 15px;
+}
+
+.card-content p {
+    margin: 15px;
+}
+.card-title{
+    text-align: center;
+}
+
+    .card img{
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+
+    /*Scroll bars*/
+
+::-webkit-scrollbar-track {
+    background-color: rgb(29, 255, 236);
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: rgb(233, 26, 233);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(233, 26, 233);
+    border-radius: 3px;
+}
+
+/*Arts*/
+
+#arts{
+    border: solid green 2px;
+    background: rgb(29,255,236);
+    background: linear-gradient(90deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
+
+}
+
+
+.arts-subcontainer{
+    border: solid blue 2px;
+    display: flex;
+    flex-basis: content;
+}
+
+.art{
+    border: solid purple 2px;
+    flex: content;
+
+}
+
+.art h2{
+    text-align: center;
+}
+
+.cards{
+    border: solid purple 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 355px;
+    min-width: 20rem;
+    height: 20rem;
+    
+}
+
+.cards img{
+    margin: 2.7rem auto;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    
+    
+   
+}
+
+#fillette3d{
+    object-position: 35% center;
+}
+
+.arts-numerique img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    border: double rgb(233, 26, 233) 3px;
+    border-radius: 50%;
+}
+
+.arts-visuel img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    border: double rgb(29, 255, 236) 3px;
+    border-radius: 50%;
+}
+
+.cards p{
+    margin-bottom: 1rem;
+}
+
+.cards .button{
+    margin-bottom: 1.3rem;
+}
+
+audio{
+   margin: 4.2rem auto;
+}
+
+/*Jeux-vidéos*/
+
+#jeux-videos{
+    border: solid blue 2px;
+
+}
+
+#jeux-videos h1{
+    width: 100%;
+    border: solid red 2px;
+    text-align: center;
+    background: rgb(29,255,236);
+    background: linear-gradient(260deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
+    
+}
+
+.jeuxVideosSubcontainer{
+    display: flex;
+    background-image: url("./assets/img/valoBG.webp");
+    background-size : cover;
+    background-position: center;
+
+}
+
+.leftContainer{
+    border: solid purple 5px;
+    width: 50%;
+    border-radius: 0 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content{
+    border: solid green 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;       
+}
+
+.content p{
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 900;
+    border: dotted rgb(233, 26, 233) 2px;
+}
+
+.content img{
+    width: 30rem;
+    margin: 10px auto;
+    border-radius: 25px;
+    border: double rgb(233, 26, 233) 4px;
+    object-fit: cover;
+}
+
+.content img:hover{
+    transform: scale(1.1);
+    border: double rgb(233, 26, 233) 4px;
+    object-fit: cover;
+}
+
+.content .button{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+.rightContainer{
+    border: solid black 2px;
+    width: 50%;
+}
+
+/*Footer*/
+footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29,255,236);
+    background: linear-gradient(90deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
+}
