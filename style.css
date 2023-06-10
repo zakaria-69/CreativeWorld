@@ -50,6 +50,14 @@ a{
     border-radius: 25px;     
 }
 
+.menuBurger{
+    display: none;
+}
+
+.logo{
+    display: none;
+}
+
 /*h1 exept header h1*/
 .mangaAnimeContainerSubContainer h1,#arts h1,#jeux-videos h1{
     text-align: center;
@@ -498,3 +506,209 @@ footer{
     background: rgb(29,255,236);
     background: linear-gradient(90deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
 }
+
+                        /*TABLETTE QUERIES*/
+
+
+@media screen and (max-width: 985px) {
+    p,h2,.button,figcaption,#jeux-videos p,.content .button{
+        font-size: 1.4rem;
+    }
+
+    /*header*/
+
+    header{
+        background-position: 25%;
+    }
+
+    /*MANGA/ANIME*/
+
+    .carousel{
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-items{
+        width: 100%;
+    }
+
+    .carousel-item{
+        margin: 0;
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card img{
+        margin: 0 auto;
+        
+    }
+
+    .card .card-content .button{
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+
+    /*ARTS*/
+
+    .arts-subcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jeuxVideosSubcontainer{
+        display: flex;
+        flex-direction: column; 
+        background-position: 52%;
+    }
+    
+    .cards{
+        height: auto;
+    }
+
+
+
+    .leftContainer, .rightContainer{
+        width: 100%;
+    }
+
+    .content img{
+        margin: 2rem auto ;
+    }
+    .content p{
+        color: rgb(233, 26, 233);
+        -webkit-text-stroke: .04rem;
+        -webkit-text-stroke-color: rgb(233, 26, 233);
+    }
+
+
+}
+
+                                    /*MOBILE QUERIES*/
+
+@media screen and (max-width: 480px ) {
+    /*Nav menu Burger and logo*/
+    .imgContainer{
+        display: none;
+    }
+
+    .menuBurger{
+        position: absolute;
+        width: 0px;
+        display: block;
+        z-index: 1;
+    }
+
+        #hamburger{
+            /*pour retirer la checkbox*/
+            display: none;
+        }
+        
+        #hamburger-logo{
+            cursor: pointer;
+            background-color: rgb(29, 255, 236);
+            width: 200px;
+            display: block;
+            color: rgb(233, 26, 233);
+            /*pour que le menu soit a droite et toujours afficher*/
+            text-align: right;
+            padding: 10px;
+            transform: translateX(-168px);
+        }
+
+        .menuBurger nav{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(29, 255, 236);
+            overflow: hidden;
+            width: 200px;
+            margin-top: -5px;
+            transform: translateX(-200px);
+        }
+
+        .menuBurger nav a{
+            text-align: right;
+            color: rgb(233, 26, 233);
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+
+        #hamburger-logo,nav{
+            transition: 0.7s;
+        }
+
+        #hamburger:checked~#hamburger-logo,
+#hamburger:checked~nav {
+    transform: translate(0);
+}
+
+.logo{
+    display: block;
+    position: absolute;
+    right: 5px;
+    width: 5rem;
+}
+
+/*Title h1 Header*/
+
+header h1{
+    border: solid red 2px;
+    font-size: x-large;
+}
+
+/*menu Deroulant*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper ul{
+    margin: 1rem;
+}
+
+/*manga/anime*/
+.carousel .card p{
+    text-align: center;    
+}
+
+/*Jeux-vidéos*/
+
+.jeuxVideosSubcontainer{
+    background-image: url("./assets/img/BGvalo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    border: solid red 3px;
+    width: 100%;
+}
+
+.content h2{
+    text-align: center;
+}
+.content img{
+    width: 90%;
+}
+
+.content p{
+    text-align: center;
+}
+
+.content .button{
+    color: rgb(29, 255, 236);
+}
+
+/*Footer*/
+footer p{
+    text-align: center;
+}
+}
+
+
