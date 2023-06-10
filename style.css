@@ -4,20 +4,22 @@
   color secondaire : rgb(233, 26, 233);
 */
 
-*,::before,::after{
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-font-family: 'Lucida Sans Unicode', sans-serif; ;
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    ;
 }
 
-h2{
+h2 {
     min-height: 8vh;
     font-size: x-large;
     color: rgb(29, 255, 236);
     font-style: italic;
     text-transform: uppercase;
-    border: solid red 2px;
     -webkit-text-stroke: .02rem;
     -webkit-text-stroke-color: rgb(233, 26, 233);
     font-style: italic;
@@ -25,43 +27,45 @@ h2{
     justify-content: center;
     align-items: center;
     width: 100%;
-    }
+}
 
-li{
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     font-weight: 600;
     font-style: italic;
 }
 
-.button{
+.button {
     border: double rgb(233, 26, 233) 3px;
     padding: 5px;
-    border-radius: 25px;     
+    border-radius: 25px;
+    color: rgb(29, 255, 236);
 }
 
-.button:hover{
+.button:hover {
     background-color: rgb(233, 26, 233);
     color: rgb(29, 255, 236);
     padding: 5px;
-    border-radius: 25px;     
+    border-radius: 25px;
 }
 
-.menuBurger{
+.menuBurger {
     display: none;
 }
 
-.logo{
+.logo {
     display: none;
 }
 
 /*h1 exept header h1*/
-.mangaAnimeContainerSubContainer h1,#arts h1,#jeux-videos h1{
+.mangaAnimeContainerSubContainer h1,
+#arts h1,
+#jeux-videos h1 {
     text-align: center;
-    border: solid green 2px;
     min-height: 10vh;
     display: flex;
     justify-content: center;
@@ -72,89 +76,89 @@ a{
     text-transform: uppercase;
     -webkit-text-stroke: .02rem;
     -webkit-text-stroke-color: rgb(233, 26, 233);
-    
+}
+
+.arts-visuel .cards{
+    border: double rgb(29, 255, 236) 4px;
+    border-radius: 25px;
+}
+.arts-sonore .cards{
+    border-top: double rgb(233, 26, 233) 4px;
+    border-left: double rgb(233, 26, 233) 4px;
+    border-bottom: double rgb(29, 255, 236) 4px;
+    border-right: double rgb(29, 255, 236) 4px;
+    border-radius: 25px;
+}
+
+.arts-numerique .cards{
+    border: double rgb(233, 26, 233) 4px;
+    border-radius: 25px;
 }
 
 /*Header*/
-
-header{
-    border: solid red 2px;
+header {
     background-image: url("./assets/img/shinobuChan.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center 18%;
-    
 }
 
-header a{
+header a {
     color: #551A8F;
 }
-.imgContainer{
-    border: solid blue 2px;
+
+.imgContainer {
     min-height: 30vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
 
-.imgContainer img{
-   width: 8rem;
+.imgContainer img {
+    width: 8rem;
 }
 
-.imgContainer ul{
+.imgContainer ul {
     margin: 1rem 2rem 1rem auto;
     display: flex;
 }
 
-.imgContainer li{
+.imgContainer li {
     border: double rgb(233, 26, 233) 3px;
     margin: 5px;
     border-radius: 25px;
     padding: 10px;
 }
 
-.imgContainer li:hover{
+.imgContainer li:hover {
     background-color: rgb(29, 255, 236);
-    color :rgb(233, 26, 233);
+    color: rgb(233, 26, 233);
     border-radius: 25px;
 }
 
 /*menu deroulant*/
-
-
-.menuDeroulant{
-    border: double rgb(29, 255, 236) 2px;
-  
-}
-
-.menuDeroulant li{
-    /*display: inline-block;
-    vertical-align: top;*/
+.menuDeroulant li {
     width: 200px;
-    /*position: relative;*/
     border: double rgb(233, 26, 233) 3px;
     border-radius: 25px;
     text-align: center;
 }
 
-.menuDeroulant li a{
+.menuDeroulant li a {
     display: block;
     padding: 20px;
     margin: 0 auto;
     color: rgb(29, 255, 236);
-    font-weight: 900;   
-   
-
+    font-weight: 900;
 }
 
-.deroulant{
+.deroulant {
     font-size: 1.3rem;
-     -webkit-text-stroke: .002rem;
+    -webkit-text-stroke: .002rem;
     -webkit-text-stroke-color: rgb(233, 26, 233);
 }
 
-.menuDeroulant li a:hover{
+.menuDeroulant li a:hover {
     background-color: rgb(29, 255, 236);
     color: rgb(233, 26, 233);
     border-radius: 25px;
@@ -163,55 +167,50 @@ header a{
 
 /*menu deroulant sub menu*/
 
-.menuDeroulant li:hover .sub-menu{
+.menuDeroulant li:hover .sub-menu {
     display: block;
 }
+
 .sub-menu {
     display: none;
     position: absolute;
-
 }
 
-.sub-menu li{
+.sub-menu li {
     display: block;
-
 }
 
-.sub-menu li a{
+.sub-menu li a {
     background-color: rgb(0, 8, 8);
-    color:  rgb(29, 255, 236);
+    color: rgb(29, 255, 236);
     border-radius: 25px;
     text-align: center;
 }
 
-
-.sub-menu li:hover a{
-background-color:rgb(29, 255, 236);
-color: rgb(233, 26, 233);
-font-size: 1.2rem;
-}
-
-.sub-menu li a:hover{
+.sub-menu li:hover a {
     background-color: rgb(29, 255, 236);
-    
+    color: rgb(233, 26, 233);
+    font-size: 1.2rem;
 }
 
-.menuDeroulant li:hover a{
+.sub-menu li a:hover {
+    background-color: rgb(29, 255, 236);
+}
+
+.menuDeroulant li:hover a {
     display: block;
 }
 
-.wrapper{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-   margin: 0 auto;
-   min-height: 20vh;
-   
-
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 20vh;
 }
 
 /*header title*/
-header h1{
+header h1 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -223,110 +222,98 @@ header h1{
     text-transform: uppercase;
     -webkit-text-stroke: .02rem;
     -webkit-text-stroke-color: rgb(233, 26, 233);
-   animation:rotateAndGrowMainTitle 3s linear ;  
+    animation: rotateAndGrowMainTitle 3s linear;
 }
 
-
 @keyframes rotateAndGrowMainTitle {
-    0%{
-        transform: rotate(0deg) scale(0.2);   
+    0% {
+        transform: rotate(0deg) scale(0.2);
     }
-    25%{
+
+    25% {
         transform: rotate(90deg) scale(0.4);
-           
+
     }
-    50%{
-        transform: rotate(180deg) scale(0.6);   
+
+    50% {
+        transform: rotate(180deg) scale(0.6);
     }
-    75%{
+
+    75% {
         transform: rotate(260deg) scale(0.8);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg) scale(1);
-            
-    }   
+
+    }
 }
 
 /*Slideshow manga Anime*/
 
-.mangaAnimeContainer{
-    border: solid blue 2px;
+.mangaAnimeContainer {
     min-height: 100vh;
-    background: rgb(29,255,236);
-background: linear-gradient(90deg, rgba(29,255,236,1) 0%, rgba(233,26,233,1) 100%);
-}
-.mangaAnimeContainerSubContainer{
-    width: 100%;
-}
-.mangaAnimeContainerSubContainer{
-    border: solid red 2px;
-    
+    background: rgb(29, 255, 236);
+    background: linear-gradient(90deg, rgba(29, 255, 236, 1) 0%, rgba(233, 26, 233, 1) 100%);
 }
 
+.mangaAnimeContainerSubContainer {
+    width: 100%;
+}
 
 /*carousel*/
 
-.carousel{
+.carousel {
     min-height: 90vh;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-.carousel ul{
+.carousel ul {
     padding: 0;
-   /* padding: 8rem 0;*/
-   display: flex;
-   /* overflow-x: scroll;*/
-   /* padding: 1rem 0;*/
-   padding-bottom: 1rem;
+    display: flex;
+    padding-bottom: 1rem;
 }
 
 .carousel-items {
     display: flex;
     overflow-x: scroll;
-   /* padding: 1rem 0;*/
-    /*scroll-snap-type: x mandatory;*/
-    /*align-items: center;*/
-    /*min-height: 90vh;*/
-    border: solid purple 3px;
 }
 
 .carousel-item {
-  /*  flex: 1 0 250px;*/
     margin-left: 1rem;
-   /* scroll-snap-align: start;*/
-    border: solid blue 3px;
-   /* height: 80%;*/
-   padding: 0;
+    padding: 0;
 }
 
 /*Carousel cards*/
 
-.card{
-    border: solid yellow 3px;
+.card {
+    border: double rgb(233, 26, 233) 4px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.card-content{
+.card-content {
     margin: 15px;
 }
 
 .card-content p {
     margin: 15px;
 }
-.card-title{
+
+.card-title {
     text-align: center;
 }
 
-    .card img{
-        min-height: 50vh;
-        max-height: 50vh;
-    }
+.card img {
+    min-height: 50vh;
+    max-height: 50vh;
+}
 
-    /*Scroll bars*/
+/*Scroll bars*/
 
 ::-webkit-scrollbar-track {
     background-color: rgb(29, 255, 236);
@@ -344,32 +331,25 @@ background: linear-gradient(90deg, rgba(29,255,236,1) 0%, rgba(233,26,233,1) 100
 
 /*Arts*/
 
-#arts{
-    border: solid green 2px;
-    background: rgb(29,255,236);
-    background: linear-gradient(90deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
-
+#arts {
+    background: rgb(29, 255, 236);
+    background: linear-gradient(90deg, rgba(233, 26, 233, 1) 0%, rgba(29, 255, 236, 1) 100%);
 }
 
-
-.arts-subcontainer{
-    border: solid blue 2px;
+.arts-subcontainer {
     display: flex;
     flex-basis: content;
 }
 
-.art{
-    border: solid purple 2px;
+.art {
     flex: content;
-
 }
 
-.art h2{
+.art h2 {
     text-align: center;
 }
 
-.cards{
-    border: solid purple 2px;
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,100 +357,91 @@ background: linear-gradient(90deg, rgba(29,255,236,1) 0%, rgba(233,26,233,1) 100
     min-height: 355px;
     min-width: 20rem;
     height: 20rem;
-    
 }
 
-.cards img{
+.cards img {
     margin: 2.7rem auto;
     height: 10rem;
     width: 10rem;
     object-fit: cover;
-    
-    
-   
 }
 
-#fillette3d{
+#fillette3d {
     object-position: 35% center;
 }
 
-.arts-numerique img:hover{
+.arts-numerique img:hover {
     transform: scale(1.5);
     cursor: pointer;
     border: double rgb(233, 26, 233) 3px;
     border-radius: 50%;
 }
 
-.arts-visuel img:hover{
+.arts-visuel img:hover {
     transform: scale(1.5);
     cursor: pointer;
     border: double rgb(29, 255, 236) 3px;
     border-radius: 50%;
 }
 
-.cards p{
+.cards p {
     margin-bottom: 1rem;
 }
 
-.cards .button{
+.cards .button {
     margin-bottom: 1.3rem;
 }
 
-audio{
-   margin: 4.2rem auto;
+audio {
+    margin: 4.2rem auto;
 }
 
 /*Jeux-vidéos*/
 
-#jeux-videos{
-    border: solid blue 2px;
-
-}
-
-#jeux-videos h1{
+#jeux-videos h1 {
     width: 100%;
-    border: solid red 2px;
     text-align: center;
-    background: rgb(29,255,236);
-    background: linear-gradient(260deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
-    
+    background: rgb(29, 255, 236);
+    background: linear-gradient(260deg, rgba(233, 26, 233, 1) 0%, rgba(29, 255, 236, 1) 100%);
+
 }
 
-.jeuxVideosSubcontainer{
+.jeuxVideosSubcontainer {
     display: flex;
     background-image: url("./assets/img/valoBG.webp");
-    background-size : cover;
+    background-size: cover;
     background-position: center;
 
 }
 
-.leftContainer{
-    border: solid purple 5px;
+.leftContainer {
     width: 50%;
     border-radius: 0 25px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.content{
-    border: solid green 2px;
+.content {
     height: 100%;
     display: flex;
-    flex-direction: column;       
+    flex-direction: column;
 }
 
-.content p{
+.content p {
     text-align: justify;
     padding: 1rem;
     font-size: 1.1rem;
     font-style: italic;
     font-weight: 900;
-    border: dotted rgb(233, 26, 233) 2px;
+    border: double rgb(233, 26, 233) 4px;
+    color: rgb(233, 26, 233);
+    -webkit-text-stroke: 0.04rem;
+    -webkit-text-stroke-color: rgb(233, 26, 233);
+
 }
 
-.content img{
+.content img {
     width: 30rem;
     margin: 10px auto;
     border-radius: 25px;
@@ -478,237 +449,244 @@ audio{
     object-fit: cover;
 }
 
-.content img:hover{
+.content img:hover {
     transform: scale(1.1);
     border: double rgb(233, 26, 233) 4px;
     object-fit: cover;
     cursor: pointer;
 }
 
-.content .button{
+.content .button {
     width: 20rem;
     display: flex;
     justify-content: center;
     margin: 1rem auto;
     font-size: 1.1rem;
 }
-.rightContainer{
-    border: solid black 2px;
+
+.rightContainer {
     width: 50%;
 }
 
 /*Footer*/
-footer{
+footer {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(29,255,236);
-    background: linear-gradient(90deg,  rgba(233,26,233,1) 0%,rgba(29,255,236,1) 100%);
+    background: rgb(29, 255, 236);
+    background: linear-gradient(90deg, rgba(233, 26, 233, 1) 0%, rgba(29, 255, 236, 1) 100%);
 }
 
-                        /*TABLETTE QUERIES*/
+/*TABLETTE QUERIES*/
 
 
 @media screen and (max-width: 985px) {
-    p,h2,.button,figcaption,#jeux-videos p,.content .button{
+
+    p,
+    h2,
+    .button,
+    figcaption,
+    #jeux-videos p,
+    .content .button {
         font-size: 1.4rem;
     }
 
     /*header*/
 
-    header{
+    header {
         background-position: 25%;
     }
 
     /*MANGA/ANIME*/
 
-    .carousel{
+    .carousel {
         display: flex;
         justify-content: center;
     }
 
-    .carousel-items{
+    .carousel-items {
         width: 100%;
     }
 
-    .carousel-item{
+    .carousel-item {
         margin: 0;
         width: 100%;
     }
 
-    .card{
+    .card {
         width: 100%;
     }
 
-    .card img{
+    .card img {
         margin: 0 auto;
-        
+
     }
 
-    .card .card-content .button{
+    .card .card-content .button {
         width: 20rem;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        
+
     }
 
     /*ARTS*/
 
-    .arts-subcontainer{
+    .arts-subcontainer {
         display: flex;
         flex-direction: column;
     }
 
-    .jeuxVideosSubcontainer{
+    .jeuxVideosSubcontainer {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         background-position: 52%;
     }
-    
-    .cards{
+
+    .art .cards {
         height: auto;
+        border-left: double rgb(29, 255, 236) 4px;
+        border-right: double rgb(233, 26, 233) 4px;
     }
 
-
-
-    .leftContainer, .rightContainer{
+    .leftContainer,
+    .rightContainer {
         width: 100%;
     }
 
-    .content img{
-        margin: 2rem auto ;
+    .content img {
+        margin: 2rem auto;
     }
-    .content p{
+
+    .content p {
         color: rgb(233, 26, 233);
         -webkit-text-stroke: .04rem;
         -webkit-text-stroke-color: rgb(233, 26, 233);
     }
-
-
 }
 
-                                    /*MOBILE QUERIES*/
+/*MOBILE QUERIES*/
 
-@media screen and (max-width: 480px ) {
+@media screen and (max-width: 480px) {
+
     /*Nav menu Burger and logo*/
-    .imgContainer{
+    .imgContainer {
         display: none;
     }
 
-    .menuBurger{
+    .menuBurger {
         position: absolute;
         width: 0px;
         display: block;
         z-index: 1;
     }
 
-        #hamburger{
-            /*pour retirer la checkbox*/
-            display: none;
-        }
-        
-        #hamburger-logo{
-            cursor: pointer;
-            background-color: rgb(29, 255, 236);
-            width: 200px;
-            display: block;
-            color: rgb(233, 26, 233);
-            /*pour que le menu soit a droite et toujours afficher*/
-            text-align: right;
-            padding: 10px;
-            transform: translateX(-168px);
-        }
+    #hamburger {
+        /*pour retirer la checkbox*/
+        display: none;
+    }
 
-        .menuBurger nav{
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(29, 255, 236);
-            overflow: hidden;
-            width: 200px;
-            margin-top: -5px;
-            transform: translateX(-200px);
-        }
+    #hamburger-logo {
+        cursor: pointer;
+        background-color: rgb(29, 255, 236);
+        width: 200px;
+        display: block;
+        color: rgb(233, 26, 233);
+        /*pour que le menu soit a droite et toujours afficher*/
+        text-align: right;
+        padding: 10px;
+        transform: translateX(-168px);
+    }
 
-        .menuBurger nav a{
-            text-align: right;
-            color: rgb(233, 26, 233);
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 30px;
-        }
+    .menuBurger nav {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(29, 255, 236);
+        overflow: hidden;
+        width: 200px;
+        margin-top: -5px;
+        transform: translateX(-200px);
+    }
 
-        #hamburger-logo,nav{
-            transition: 0.7s;
-        }
+    .menuBurger nav a {
+        text-align: right;
+        color: rgb(233, 26, 233);
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
 
-        #hamburger:checked~#hamburger-logo,
-#hamburger:checked~nav {
-    transform: translate(0);
+    #hamburger-logo,
+    nav {
+        transition: 0.7s;
+    }
+
+    #hamburger:checked~#hamburger-logo,
+    #hamburger:checked~nav {
+        transform: translate(0);
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        right: 5px;
+        width: 5rem;
+    }
+
+    /*Title h1 Header*/
+
+    header h1 {
+        font-size: x-large;
+    }
+
+    /*menu Deroulant*/
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper ul {
+        margin: 1rem;
+    }
+
+    /*manga/anime*/
+    .carousel .card p {
+        text-align: center;
+    }
+
+    /*Jeux-vidéos*/
+
+    .jeuxVideosSubcontainer {
+        background-image: url("./assets/img/BGvalo3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content h2 {
+        text-align: center;
+    }
+
+    .content img {
+        width: 90%;
+    }
+
+    .content p {
+        text-align: center;
+    }
+
+    .content .button {
+        color: rgb(29, 255, 236);
+    }
+
+    /*Footer*/
+    footer p {
+        text-align: center;
+    }
 }
-
-.logo{
-    display: block;
-    position: absolute;
-    right: 5px;
-    width: 5rem;
-}
-
-/*Title h1 Header*/
-
-header h1{
-    border: solid red 2px;
-    font-size: x-large;
-}
-
-/*menu Deroulant*/
-.wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.wrapper ul{
-    margin: 1rem;
-}
-
-/*manga/anime*/
-.carousel .card p{
-    text-align: center;    
-}
-
-/*Jeux-vidéos*/
-
-.jeuxVideosSubcontainer{
-    background-image: url("./assets/img/BGvalo3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.content{
-    border: solid red 3px;
-    width: 100%;
-}
-
-.content h2{
-    text-align: center;
-}
-.content img{
-    width: 90%;
-}
-
-.content p{
-    text-align: center;
-}
-
-.content .button{
-    color: rgb(29, 255, 236);
-}
-
-/*Footer*/
-footer p{
-    text-align: center;
-}
-}
-
-
