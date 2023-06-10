@@ -569,7 +569,7 @@ footer {
     }
 
     header h1{
-        min-height: 40vh;
+        min-height: 70vh;
     }
 
     /*MANGA/ANIME*/
@@ -647,7 +647,8 @@ footer {
     /*Title h1 Header*/
 
     header h1 {
-        font-size: x-large;
+        font-size: xx-large;
+        min-height: 40vh;
     }
 
     /*menu Deroulant*/
