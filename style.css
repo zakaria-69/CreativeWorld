@@ -76,6 +76,8 @@ a {
     text-transform: uppercase;
     -webkit-text-stroke: .02rem;
     -webkit-text-stroke-color: rgb(233, 26, 233);
+    border-bottom: double rgb(29, 255, 236) 4px;
+    border-radius: 25px;
 }
 
 .arts-visuel .cards{
@@ -398,11 +400,14 @@ audio {
 
 /*Jeux-vidéos*/
 
+#jeux-videos{
+    background: linear-gradient(90deg, rgba(29, 255, 236, 1) 0%, rgba(233, 26, 233, 1) 100%);
+}
+
 #jeux-videos h1 {
     width: 100%;
     text-align: center;
-    background: rgb(29, 255, 236);
-    background: linear-gradient(260deg, rgba(233, 26, 233, 1) 0%, rgba(29, 255, 236, 1) 100%);
+  
 
 }
 
@@ -483,6 +488,71 @@ footer {
 
 @media screen and (max-width: 985px) {
 
+    /*Nav menu Burger and logo*/
+    .imgContainer {
+        display: none;
+    }
+
+    .menuBurger {
+        position: absolute;
+        width: 0px;
+        display: block;
+        z-index: 1;
+    }
+
+    #hamburger {
+        /*pour retirer la checkbox*/
+        display: none;
+    }
+
+    #hamburger-logo {
+        cursor: pointer;
+        background-color: rgb(29, 255, 236);
+        width: 200px;
+        display: block;
+        color: rgb(233, 26, 233);
+        /*pour que le menu soit a droite et toujours afficher*/
+        text-align: right;
+        padding: 10px;
+        transform: translateX(-168px);
+    }
+
+    .menuBurger nav {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(29, 255, 236);
+        overflow: hidden;
+        width: 200px;
+        margin-top: -5px;
+        transform: translateX(-200px);
+    }
+
+    .menuBurger nav a {
+        text-align: right;
+        color: rgb(233, 26, 233);
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+
+    #hamburger-logo,
+    nav {
+        transition: 0.7s;
+    }
+
+    #hamburger:checked~#hamburger-logo,
+    #hamburger:checked~nav {
+        transform: translate(0);
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        right: 5px;
+        width: 5rem;
+    }
+
     p,
     h2,
     .button,
@@ -496,6 +566,10 @@ footer {
 
     header {
         background-position: 25%;
+    }
+
+    header h1{
+        min-height: 40vh;
     }
 
     /*MANGA/ANIME*/
@@ -569,73 +643,7 @@ footer {
 
 /*MOBILE QUERIES*/
 
-@media screen and (max-width: 480px) {
-
-    /*Nav menu Burger and logo*/
-    .imgContainer {
-        display: none;
-    }
-
-    .menuBurger {
-        position: absolute;
-        width: 0px;
-        display: block;
-        z-index: 1;
-    }
-
-    #hamburger {
-        /*pour retirer la checkbox*/
-        display: none;
-    }
-
-    #hamburger-logo {
-        cursor: pointer;
-        background-color: rgb(29, 255, 236);
-        width: 200px;
-        display: block;
-        color: rgb(233, 26, 233);
-        /*pour que le menu soit a droite et toujours afficher*/
-        text-align: right;
-        padding: 10px;
-        transform: translateX(-168px);
-    }
-
-    .menuBurger nav {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(29, 255, 236);
-        overflow: hidden;
-        width: 200px;
-        margin-top: -5px;
-        transform: translateX(-200px);
-    }
-
-    .menuBurger nav a {
-        text-align: right;
-        color: rgb(233, 26, 233);
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 30px;
-    }
-
-    #hamburger-logo,
-    nav {
-        transition: 0.7s;
-    }
-
-    #hamburger:checked~#hamburger-logo,
-    #hamburger:checked~nav {
-        transform: translate(0);
-    }
-
-    .logo {
-        display: block;
-        position: absolute;
-        right: 5px;
-        width: 5rem;
-    }
-
+@media screen and (max-width: 625px) {
     /*Title h1 Header*/
 
     header h1 {
@@ -648,8 +656,8 @@ footer {
         flex-direction: column;
     }
 
-    .wrapper ul {
-        margin: 1rem;
+    .menu-container{
+        margin: 1rem auto;
     }
 
     /*manga/anime*/
@@ -689,4 +697,18 @@ footer {
     footer p {
         text-align: center;
     }
+}
+
+@media screen and (max-height : 525px) {
+    header h1{
+        min-height: 10vh;
+    }
+    
+}
+
+@media screen and (max-height : 350px) {
+   .menuDeroulant li a{
+       padding: 0;
+    }
+    
 }
