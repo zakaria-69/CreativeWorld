@@ -105,9 +105,9 @@ header {
     background-position: center 18%;
 }
 
-header a {
+/*header a {
     color: #551A8F;
-}
+}*/
 
 .imgContainer {
     min-height: 30vh;
@@ -133,10 +133,19 @@ header a {
 }
 
 .imgContainer li:hover {
-    background-color: rgb(29, 255, 236);
+    background-color: black;
     color: rgb(233, 26, 233);
     border-radius: 25px;
 }
+
+.imgContainer li a:hover{
+    color: rgb(233, 26, 233);
+}
+
+.imgContainer li a:active{
+    color: rgb(29, 255, 236);
+}
+
 
 /*menu deroulant*/
 .menuDeroulant li {
@@ -195,8 +204,18 @@ header a {
     font-size: 1.2rem;
 }
 
+.sub-menu li:active a {
+    background-color: rgb(233, 26, 233);
+    color: rgb(29, 255, 236);
+    font-size: 1.2rem;
+}
+
 .sub-menu li a:hover {
     background-color: rgb(29, 255, 236);
+}
+
+.sub-menu li a:active {
+    background-color: rgb(233, 26, 233);
 }
 
 .menuDeroulant li:hover a {
