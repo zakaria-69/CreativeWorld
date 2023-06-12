@@ -311,8 +311,13 @@ header h1 {
 }
 
 .card img {
-    min-height: 50vh;
-    max-height: 50vh;
+    border-radius:25px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card img:hover {
+   transform: scale(1.1);
 }
 
 /*Scroll bars*/
@@ -589,7 +594,7 @@ footer {
     }
 
     .card {
-        width: 100%;
+        width: 100vw;
     }
 
     .card img {
