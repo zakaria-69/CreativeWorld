@@ -311,13 +311,9 @@ header h1 {
 }
 
 .card img {
-    border-radius:25px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.card img:hover {
-   transform: scale(1.1);
+    /*min-height: 50vh;
+    max-height: 50vh;*/
+    border-radius:25px ;
 }
 
 /*Scroll bars*/
@@ -602,6 +598,10 @@ footer {
 
     }
 
+    .card img:hover{
+        transform: scale(1.2);
+    }
+
     .card .card-content .button {
         width: 20rem;
         display: flex;
@@ -669,6 +669,19 @@ footer {
     /*manga/anime*/
     .carousel .card p {
         text-align: center;
+    }
+
+    .card {
+        width: 100vw;
+    }
+
+    .card img {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .card img:hover{
+        transform: scale(1.1);
     }
 
     /*Jeux-vidéos*/
