@@ -750,3 +750,8 @@ footer {
     }
     
 }
+
+
+.seo-only {
+    display: none;
+}
